@@ -1,6 +1,30 @@
 section {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 
+}
+figure {
+  display: flex;
+  width: 18rem;
+  height: 18rem;
+  padding: 12px;
+  flex-direction: column;
+  
+  flex-shrink: 0;
+
+  border-radius: 12px;
+  background: var(--gray-300);
+
+  margin-bottom: 1rem;
+
+}
+
+figure img {
+  width: 16.65rem;
+  height: 156px;
+  flex-shrink: 0;
 }
 
 @media (min-width: 700px) {
@@ -8,6 +32,82 @@ section {
     display: grid;
     
   
+  }
+
+  #works {
+    background-color: var(--gray-200);
+    display: flex;
+    padding: 2rem 7.5rem 5rem 7.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    align-self: stretch;
+    border-radius: 0.875rem;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  
+    & header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    & h3 {
+      font: var(--title-md);
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    
+      
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    figure {
+      display: flex;
+      width: 18rem;
+      height: 18rem;
+      padding: 12px;
+      flex-direction: column;
+      gap: 20px;
+      flex-shrink: 0;
+    
+      border-radius: 12px;
+      background: var(--gray-300);
+    
+    }
+    
+    figure img {
+      width: 16.65rem;
+      height: 156px;
+      flex-shrink: 0;
+    }
+    figure p {
+      color: var(--gray-500);
+      font: var(--text-sm);
+    }
+    
+    #description p {
+      gap: 8px;
+      margin-top: 0;
+    }
+    
+    #skills {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
   }
 
 }
