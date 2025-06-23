@@ -1,0 +1,13 @@
+section {
+  display: grid;
+
+}
+
+@media (min-width: 700px) {
+  section {
+    display: grid;
+    
+  
+  }
+
+}
