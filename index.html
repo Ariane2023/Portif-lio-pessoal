@@ -15,9 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata&family=Maven+Pro&display=swap" rel="stylesheet">
 
   </head>
+  
   <body>
     <div id="container">
-      <header class="first ">
+      <header class="first">
         <nav>
           <ul class="header_1">
             <li>
@@ -38,11 +39,6 @@
 
         <fieldset>
           <img class="logo" src="./assets/Image.png" alt="">
-          
-          <div id="switch" onclick="toggleMode()">
-            <button></button>
-            <span></span>
-          </div>
         </fieldset>
       
         <h4>Hello World! Meu nome é <span>Ariane Costa</span> e sou</h4>
@@ -80,8 +76,11 @@
 
       <div id="about_me">
         <h2>Sobre mim</h2>
-        <p>Meu nome é <strong>Ariane de Abreu Costa</strong>, sou casada e mãe de três filhos, duas meninas e um rapaz. Me formei em Pedagogia no ano de 2024 na Uninter e no ano de 2023 me apaixonei por tecnologia em especial linguagem de programação e CSS Nativo, essa paixão me fez iniciar um curso de Análises e Desenvolvimento de Sistemas junto a Uninter. Amo estudar e aprender coisas novas. Tenho conhecimentos em Figma, Jira, Word, Excel e outros. Gosto de ler, ouvir boas músicas e assitir a Filmes de ação. Amo meu Jesus que tem me dado inteligência e disposição para contruir vários projetos e posta-los no Github.</p>
+        <p>Meu nome é <strong>Ariane de Abreu Costa</strong>, sou casada e mãe de três filhos, duas meninas e um rapaz. Me formei em Pedagogia no ano de 2024 na Uninter e no ano de 2023 me apaixonei por tecnologia em especial linguagem de programação e CSS Nativo, essa paixão me fez iniciar um curso de Análises e Desenvolvimento de Sistemas junto a Uninter. Amo estudar e aprender coisas novas. Tenho conhecimentos em Figma, Jira, Word, Excel e outros. Gosto de ler, ouvir boas músicas e assitir a Filmes de ação. Amo meu Jesus que tem me dado inteligência e disposição para construir vários projetos e posta-los no Github.</p>
       </div>
+      
+      <hr>
+
       <section id="works">
         <header>
           <p class="main-red Subtitle">Meu trabalho</p>
@@ -91,11 +90,8 @@
         <div class="project">
           <figure>
             <img src="./assets/Thumbnail_Project-01.png" alt="Foto de uma rede social onde as pessoas mostram os registros de suas viagens pelo mundo">
-            <div id="description">
-              <span class="contant-tag base-gray">Travelgran</span>
-              <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
-            </div>
-            
+            <span class="contant-tag base-gray">Travelgran</span>
+            <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo<p>            
           </figure>
           
           <figure>
@@ -130,7 +126,9 @@
         </div>
       </section>
 
-      <section>
+      <hr>
+
+      <section class="more">
         <div id="training">
           <h2>Formação Educacional</h2>
           <ul>
@@ -144,22 +142,25 @@
             <li>Full-Stack - Cursando na Rocketseat</li>
           </ul>  
         </div>
-        <div id="portifolio">
-          <h2>Conheça meu Portifólio</h2>
-          <li><a href="https://ariane2023.github.io/Formulario_de_matricula/" target="_blank"></a>Formulário de Matrícula</li>
-          <li><a href="https://ariane2023.github.io/Zingen/" target="_blank"></a>Quem canta seus males espanta</li>
-          <li> <a href="https://ariane2023.github.io/Lista_de_compras/" target="_blank"></a>Lista de Compras</li>
-          <li> <a href="https://ariane2023.github.io/Portal-de-Noticias/" target="_blank"></a>Portal de Notícias</li>
-          <li> <a href="https://github.com/Ariane2023" target="_blank"></a>Portifólio completo</li>
+        <div class="more_2">
+          <div id="portifolio">
+            <h2>Conheça meu Portifólio</h2>
+            <li><a href="https://ariane2023.github.io/Formulario_de_matricula/" target="_blank">Formulário de Matrícula</a></li>
+            <li><a href="https://ariane2023.github.io/Zingen/" target="_blank">Quem canta seus males espanta</a></li>
+            <li><a href="https://ariane2023.github.io/Lista_de_compras/" target="_blank">Lista de Compras</a></li>
+            <li><a href="https://ariane2023.github.io/Portal-de-Noticias/" target="_blank">Portal de Notícias</a></li>
+            <li><a href="https://github.com/Ariane2023" target="_blank">Portifólio completo</a></li>
+          </div>
+  
+          <div id="contato">
+            <h2>Contato</h2>
+            <ul>
+              <li> Email: anne.de.anreu@gmail.com</li>
+              <li> Telefone: 92 98419-4205</li>
+            </ul>
+          </div>
         </div>
-
-        <div id="contato">
-          <h2>Contato</h2>
-          <ul>
-            <li> Email: anne.de.anreu@gmail.com</li>
-            <li> Telefone: 92 98419-4205</li>
-          </ul>
-        </div>
+        
       </section>
 
       <section>
@@ -177,9 +178,11 @@
       </section>
 
       <footer>
-        Trabalho feito com ♥ por Ariane
+        <strong>Feito com ♥ por Ariane</strong> 
       </footer>
     </div>
+
+    <audio id="click-sound" src="./assets/click.mp3" preload="auto"></audio>
 
     <script
       type="module"
