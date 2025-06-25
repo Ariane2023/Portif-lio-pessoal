@@ -12,14 +12,16 @@
 }
 
 .header_1{
-  color: #E2E4E9;
   list-style: none;
   display: flex;
-  gap: 0.5rem;
+  gap: 1.5rem;
   width: 100%;
   margin-bottom: 2rem;
-  text-decoration: none;
-  font: var(--text-md);
+  & a {
+    color: #E2E4E9;
+    text-decoration: none;
+    font: var(--text-sm);
+  }
   
 }
   
@@ -73,6 +75,7 @@ header span {
   justify-content: center;
   width: 100%;
   height: auto;
+  text-align: justify;
 
   margin-bottom: 50px;
 }
@@ -80,6 +83,7 @@ header span {
 .arrow {
   margin-top: 1.5rem;
   width: 1rem; 
+  margin-bottom: 3rem;
 }
 
 
@@ -124,7 +128,7 @@ header li span{
     align-items: center;
     flex-direction: column;
   
-    padding: 3rem 7rem 3.5rem 10rem;
+    padding: 1rem 7rem 3.5rem 10rem;
   }
   header fieldset {
     display: flex;
@@ -174,20 +178,30 @@ header li span{
     color: var(--purple);
   }
     
-  #switch {
-    margin-top: 1rem;
+  .header_1{
+    list-style: none;
+    display: flex;
+    gap: 3.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    & a {
+      color: var(--gray-400);
+      text-decoration: none;
+      font: var(--title-sm);
+    }
+
   }
   
   .box {
     color: var(--gray-400);
-    font: var(--text-sm);
+    font: var(--text-lg);
     display: flex;
     align-content: center;
     justify-content: center;
     width: 680px;
     height: 40px;
   
-    margin-bottom: 50px;
+    margin-bottom: 6rem;
   }
   
   .arrow {
