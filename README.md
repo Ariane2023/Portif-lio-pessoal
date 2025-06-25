@@ -12,8 +12,7 @@
 </p>
 
 <p align="center">
-  <img alt="projeto discovery" src=".github/preview.jpg"
-  width="100%">
+  ![image](https://github.com/user-attachments/assets/5d41541f-c3c0-40eb-abdf-299e6f8b15f8)
 </p>
 
 ## 🚀 Tecnologias
