@@ -1,17 +1,26 @@
-function toggleMode() {
-  const html = document.documentElement
-  html.classList.toggle("light")
+// Seleciona os links do portfólio e o som
+const links = document.querySelectorAll("#portifolio a");
+const clickSound = document.getElementById("click-sound");
 
-  // pegar a tag img
-  const img = document.querySelector("#profile img")
+// Reproduz som e mostra emoji
+links.forEach(link => {
+  link.addEventListener("click", (e) => {
+    clickSound.play();
+  });
+});
 
-  //substituir a imagem
-  if (html.classList.contains("light")) {
-    // se tiver light mode, adicionar a imagem light
-    img.setAttribute("src", "./assets/avatar-dark.png")
-    img.setAttribute("alt", "Logo do Site Técnico 24h")
-  } else {
-    // se tiver sem light mode, manter a imagem normal
-    img.setAttribute("src", "./assets/avatar-light.png")
-  }
-}
+// Contador de visitas (localStorage)
+let count = localStorage.getItem("visitCount");
+count = count ? parseInt(count) + 1 : 1;
+localStorage.setItem("visitCount", count);
+
+const visitDisplay = document.createElement("p");
+visitDisplay.textContent = `Você visitou este site ${count} vez(es).`;
+visitDisplay.style.marginTop = "1rem";
+visitDisplay.style.fontStyle = "italic";
+visitDisplay.style.color = "#ccc";
+
+// Coloca o contador no final da página
+document.body.appendChild(visitDisplay);
+
+
