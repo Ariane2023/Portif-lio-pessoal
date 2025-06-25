@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img alt="projeto discovery" src=".github/preview.jpg"
+  <img alt="projeto discovery" src=".github/preview_.jpg"
   width="100%">
 </p>
 
