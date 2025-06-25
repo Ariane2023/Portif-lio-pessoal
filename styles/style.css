@@ -19,12 +19,6 @@ body {
   justify-content: center;
 }
 
-/* pseudo-selector */
-ul li a:hover {
-  background: var(--surface-color-hover);
-  border: 1.5px solid var(--text-color);
-}
-
 #about_me {
   color: var(--gray-500);
   font: var(--text-md);
@@ -68,7 +62,8 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 1rem;
+  color: white;
 
   transition: background 0.2s;
   border-radius: 50%;
