@@ -92,14 +92,7 @@ footer {
 
 /* media queries */
 @media (min-width: 700px) {
-  :root {
-    --bg-url: url(./assets/bg-desktop.jpg);
-  }
-
-  .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
-  }
-
+  
   #container {
     width: 100%;
     max-width: 60.75rem;
@@ -111,23 +104,4 @@ footer {
     justify-content: center;
   }
 
-}
-
-/* animation */
-@keyframes slide-in{
-  from {
-    left: 0;
-  }
-  to {
-    left: 50%;
-  }
-
-}
-@keyframes slide-back {
-  from {
-    left: 50%;
-  }
-  to {
-    left: 0;
-  }
 }

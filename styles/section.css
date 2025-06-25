@@ -74,12 +74,7 @@ figure img {
 
 
 @media (min-width: 700px) {
-  section {
-    display: grid;
-    
-  
-  }
-
+ 
   #works {
     background-color: var(--gray-200);
     display: flex;
